@@ -1,0 +1,15 @@
+<h2 class="text-center">Blog posts</h2>
+<hr>
+<section class="posts" data-ng-show="postsHasLoaded">
+
+	<article class="post" data-ng-repeat="post in posts | limitTo: limit : offset">
+		<h4><strong><a href="#/blog/{{ post.id }}">{{ post.title }}</a></strong></h4>
+		<p>{{ post.body }}</p>
+	</article>
+
+	<div class="text-center" data-ng-hide="limit >= no_of_posts">
+		<span class="btn btn-warning" data-ng-click="loadMorePosts()">Load more posts</span>
+		<p class="loader text-center" data-ng-show="loading">Loading...</p>
+	</div>
+
+</section>

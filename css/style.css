@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color:#0080c0;
+}
+a {
+	color:inherit;
+}
+a:hover,
+a:focus {
+	text-decoration: underline;
+	color: inherit;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+.container {
+	padding: 10px 20px 50px;
+}
+.container h1 {
+	text-align: center;
+}
+h2 {
+	color: #ffffff;
+}
+.post {
+	border: solid 1px rgba(0,0,0,0.2);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	background-color: rgba(0,0,0,0.4);
+	color: #eee;
+}
+.loader {
+	margin-top: 10px;
+}
+.entry-content {
+	font-size: 18px;
+	color: #eee;
+}
